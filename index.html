@@ -18,15 +18,15 @@
     // tam pencere tuval (Unity'nin varsayılan şablonu 960x600 sabit kutu, telefonda arayüzün üstü taşıyordu)
     var buildUrl = "Build";
     var s = document.createElement("script");
-    s.src = buildUrl + "/71b9ed2c51ab04b2642adb75847f2866.loader.js";
+    s.src = buildUrl + "/2dcab52059dc29885330e4e3332557ae.loader.js";
     s.onload = function () {
       createUnityInstance(document.getElementById("unity-canvas"), {
-        dataUrl: buildUrl + "/1abe54035eff00c3f6396cb6ec573903.data.unityweb",
+        dataUrl: buildUrl + "/887fae5785a99fad164e0cc612f3e4a6.data.unityweb",
         frameworkUrl: buildUrl + "/a4f05b85f02475f32fe17e47a05a3f8e.framework.js.unityweb",
-        codeUrl: buildUrl + "/07e54b9648499504d47cfc6829ec5499.wasm.unityweb",
+        codeUrl: buildUrl + "/f2aa4ae4a74f6eeb2cbc27b6ceee9f55.wasm.unityweb",
         companyName: "Otag",
         productName: "Kor Taşıyıcı",
-        productVersion: "1.0",
+        productVersion: "1.0.0",
         devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
       }, function (p) { document.getElementById("durum").textContent = "Köz yakılıyor… %" + Math.round(p * 100); })
       .then(function (u) { window.unityInstance = u; document.getElementById("durum").remove(); })
